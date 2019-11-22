@@ -212,6 +212,7 @@ class MainGame():
     #2 文本绘制
     def draw_text(self, content, size, color):
         pygame.font.init()
+        #建议这里用font.Font() 有些用户系统没有自带kaiti  
         font = pygame.font.SysFont('kaiti', size)
         text = font.render(content, True, color)
         return text
